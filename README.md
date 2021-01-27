@@ -9,5 +9,9 @@ Servidor con todas las dependencias y configuraciones necesarias para empezar pr
 
 ## Ejecuta el comando para instalar node_modules
 ```
+npm install
+```
+## Reconstruye el dist con:
+```
 npm run build
 ```
