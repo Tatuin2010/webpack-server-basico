@@ -11,7 +11,10 @@ Servidor con todas las dependencias y configuraciones necesarias para empezar pr
 ```
 npm install
 ```
+<<<<<<< HEAD
 ## Reconstruye el dist con:
 ```
 npm run build
 ```
+=======
+>>>>>>> 336eafca649bb5f63db1bd3a505cd50652ffa0a2
