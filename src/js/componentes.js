@@ -1,1 +1,1 @@
-import '../css/componentes.css';
+import '../css/componentes.less';

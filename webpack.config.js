@@ -7,15 +7,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
+    optimization: {
+        minimizer: [new OptimiceCssAssetsPlugin()]
+    },
     module: {
         rules: [{
-                test: /\.css$/i,
-                exclude: /styles\.css$/i,
-                use: ['style-loader', 'css-loader']
-            },
-            {
-                test: /styles\.css$/i,
-                use: [MiniCssStylePlugin.loader, 'css-loader']
+                test: /\.less$/i,
+                use: [MiniCssStylePlugin.loader, 'css-loader', 'less-loader']
             },
             {
                 test: /\.html$/i,
@@ -44,7 +42,5 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
     ],
-    optimization: {
-        minimizer: [new OptimiceCssAssetsPlugin()]
-    },
+
 }

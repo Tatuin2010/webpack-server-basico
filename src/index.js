@@ -1,1 +1,2 @@
-import './styles.css';
+import './estilos.less';
+import './js/componentes';
